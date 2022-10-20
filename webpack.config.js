@@ -1,26 +1,14 @@
 const path = require("path");
 
-/*We are basically telling webpack to take index.js from entry. Then check for all file extensions in resolve. 
-After that apply all the rules in module.rules and produce the output and place it in main.js in the public folder.*/
-
 module.exports={
     /** "mode"
      * the environment - development, production, none. tells webpack 
      * to use its built-in optimizations accordingly. default is production 
      */
     mode: "development", 
-    /** "entry"
-     * the entry point 
-     */
-    entry: "./index.js", 
+    entry: "./index.js",
     output: {
-        /** "path"
-         * the folder path of the output file 
-         */
         path: path.resolve(__dirname, "public"),
-        /** "filename"
-         * the name of the output file 
-         */
         filename: "main.js"
     },
     /** "target"
@@ -28,6 +16,7 @@ module.exports={
      * for browser (client side). Default is "web"
      */
     target: "web",
+    devtool: "inline-source-map",
     devServer: {
         port: "9500",
         static: ["./public"],
@@ -41,9 +30,9 @@ module.exports={
     module:{
         rules: [
             {
-                test: /\.(js|jsx)$/,    //kind of file extension this rule should look for and apply in test
-                exclude: /node_modules/, //folder to be excluded
-                use:  'babel-loader' //loader which we are going to use
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use:  'babel-loader'
             },
             {
                 test: /\.(css)$/,

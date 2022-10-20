@@ -6,33 +6,27 @@ import './styles/App.css';
 const App = () =>{
 
     return  (
-        <div>
+        <>
             <Container>
                 <DesignNav></DesignNav>
             </Container>
             <Container className="main">
                 <Row className="rows">
-                <Col className="columns hotel">
-                    <p className="text-center">
+                <Col className="columns hotel text-center">
                     <h3>Hotel</h3>
-                        <img src="https://via.placeholder.com/300x440" alt="Hotel"></img>
-                    </p>
+                    <img src="https://via.placeholder.com/300x440" alt="Hotel"></img>
                 </Col>
-                <Col className="columns restaurant">
-                    <p className="text-center">
+                <Col className="columns restaurant text-center">
                     <h3>Restaurant</h3>
-                            <img src="https://via.placeholder.com/300x440" alt="Restaurant"></img>
-                    </p>
+                    <img src="https://via.placeholder.com/300x440" alt="Restaurant"></img>
                 </Col>
-                <Col className="columns residential">
-                    <p className="text-center">
+                <Col className="columns residential text-center">
                     <h3>Residential</h3>
-                        <img src="https://via.placeholder.com/300x440" alt="Residential"></img>
-                    </p>
-                    </Col>
+                    <img src="https://via.placeholder.com/300x440" alt="Residential"></img>
+                </Col>
                 </Row>
             </Container>
-        </div>
+        </>
     )
 }
 
