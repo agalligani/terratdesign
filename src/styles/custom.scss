@@ -1,0 +1,80 @@
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:regular,bold,100,200,300,400,500');
+
+* {
+    font-family: Montserrat;
+}
+
+.menu {
+    background-color: #fefefe;
+}
+
+.rows {
+    padding-top: 40px;
+}
+
+.columns {
+    padding-top: 11px;
+    padding-bottom: 18px;
+    h1, h2, h3 {
+        text-align: center;
+    }
+    h3 {
+        font-size: 1.3rem;
+        font-weight: 300;
+        letter-spacing: 8pt;
+    }
+
+}
+
+.columns:nth-child(1) {
+    border-left: none;
+}
+
+ul.small-logo {
+    border: solid 2px #000000;
+    background-color: #ffffff;
+    line-height: 5px;
+    padding: 3px 0px 2px 3px;
+    margin: 0px;
+    text-align: center;
+    width: 72px;
+    list-style: none;
+}
+
+@include media-breakpoint-up(xl) {
+    
+    .columns {
+        border-left: solid 1px #cc5500;
+    }    
+
+}
+
+@include media-breakpoint-down(xl) {
+    
+    .columns {
+        img {
+            width: 100px;
+        }
+    }    
+}
+
+ul.small-logo li {
+    font-weight: 500;
+    line-height: 13px;
+    margin: 5px;
+    padding: 0px;
+    letter-spacing: 6px;
+}
+
+ul.small-logo li:nth-child(3) { 
+    letter-spacing: 4px;
+}
+
+ul.small-logo li:nth-child(4) {
+    padding-left: 1px;
+}
+
+.terred {
+    color: #cc5500;
+}

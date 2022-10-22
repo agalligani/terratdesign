@@ -1,32 +1,39 @@
 import React from "react";
-import {Container, Row, Col} from "react-bootstrap";
-import DesignNav from "./components/Navbar/DesignNav";
-import './styles/App.css';
+import DesignNav from "./components/Navbar/DesignNav"
+import Home from "./components/Home/Home";
+import Contact from "./components/Contact/Contact";
+import Portfolio from "./components/Portfolio/Portfolio";
+import './styles/custom.scss';
+import {
+    HashRouter as Router,
+    Routes,
+    Route,
+    useParams,
+    useRouteMatch
+  } from "react-router-dom";
+import { Container } from "react-bootstrap";
 
-const App = () =>{
+const App = () => {
 
     return  (
-        <>
-            <Container>
-                <DesignNav></DesignNav>
-            </Container>
-            <Container className="main">
-                <Row className="rows">
-                <Col className="columns hotel text-center">
-                    <h3>Hotel</h3>
-                    <img src="https://via.placeholder.com/300x440" alt="Hotel"></img>
-                </Col>
-                <Col className="columns restaurant text-center">
-                    <h3>Restaurant</h3>
-                    <img src="https://via.placeholder.com/300x440" alt="Restaurant"></img>
-                </Col>
-                <Col className="columns residential text-center">
-                    <h3>Residential</h3>
-                    <img src="https://via.placeholder.com/300x440" alt="Residential"></img>
-                </Col>
-                </Row>
-            </Container>
-        </>
+        <Router>
+        <DesignNav />
+            <Routes>
+                <Route path="/" element={<Home/>} />
+                <Route path="/contact" element={<Contact/>} />
+                <Route path="/portfolio" element={<Home/>} />
+                <Route path="/portfolio/:id" element={<Picker />} />
+            </Routes>
+        </Router>
+    )
+}
+
+function Picker() {
+    let { id } = useParams();
+    return (
+        <Container>
+            <Portfolio id={id} />
+        </Container>
     )
 }
 

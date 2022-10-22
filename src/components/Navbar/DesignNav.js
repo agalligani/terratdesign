@@ -1,26 +1,32 @@
 import React from "react";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import {Container, Nav, Navbar, NavDropdown} from 'react-bootstrap';
+import {LinkContainer} from 'react-router-bootstrap';
 import SmallLogo from "../Logos/SmallLogo";
 
 function DesignNav() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home"><SmallLogo /></Navbar.Brand>
+        <Navbar.Brand href="/"><SmallLogo /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Contact</Nav.Link>
+          <LinkContainer to="/">
+            <Nav.Link>Home</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to="/contact">
+            <Nav.Link>Contact</Nav.Link>
+          </LinkContainer>
             <NavDropdown title="Portfolio" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Hotel</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Restaurant
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Residential</NavDropdown.Item>
+              <LinkContainer to="/portfolio/hotel">
+                <NavDropdown.Item>Hotel</NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to="/portfolio/restaurant">
+                <NavDropdown.Item>Restaurant</NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to="/portfolio/residential">
+                <NavDropdown.Item>Residential</NavDropdown.Item>
+              </LinkContainer>
               {/* <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Separated link

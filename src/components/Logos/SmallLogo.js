@@ -1,7 +1,7 @@
 import React from "react";
 
 const SmallLogo = () => {
-    return <ul className="small-logo">
+    return <ul className="small-logo .bg-white">
         <li>TER</li>
         <li>RAT</li>
         <li className="terred">DES</li>

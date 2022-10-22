@@ -9,7 +9,8 @@ module.exports={
     entry: "./index.js",
     output: {
         path: path.resolve(__dirname, "public"),
-        filename: "main.js"
+        filename: "main.js",
+        publicPath: "/"
     },
     /** "target"
      * setting "node" as target app (server side), and setting it as "web" is 
@@ -21,8 +22,10 @@ module.exports={
         port: "9500",
         static: ["./public"],
         open: true,
-        hot: true ,
-        liveReload: true
+        hot: true,
+        liveReload: true,
+        /** this next line is important for react-router-dom */
+        historyApiFallback: true
     },
     resolve: {
         extensions: ['.js','.jsx','.json'] 
@@ -37,7 +40,18 @@ module.exports={
             {
                 test: /\.(css)$/,
                 use: ['style-loader','css-loader']
-            }
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                  // Creates `style` nodes from JS strings
+                  "style-loader",
+                  // Translates CSS into CommonJS
+                  "css-loader",
+                  // Compiles Sass to CSS
+                  "sass-loader",
+                ],
+              }
         ]
     }
 }
