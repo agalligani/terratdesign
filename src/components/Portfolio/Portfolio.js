@@ -1,28 +1,114 @@
 import React from "react";
+import "./Portfolio.scss";
 import {useParams} from "react-router-dom";
 
 const Hotel = () => {
    return (
-    <h1>Hotel</h1>
+   <React.Fragment>
+      <h1>Hotel</h1>
+      <ul className="mondrianGrid">
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+      </ul>
+    </React.Fragment>
    )
 }
 
 const Restaurant = () => {
     return (
-     <h1>Restaurant</h1>
+      <React.Fragment>
+      <h1>Restaurant</h1>
+      <ul className="mondrianGrid">
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+      </ul>
+      </React.Fragment>
     )
  }
 
 const Residential = () => {
     return (
-     <h1>Residential</h1>
+      <React.Fragment>
+      <h1>Residential</h1>
+      <ul className="mondrianGrid">
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+      </ul>
+      </React.Fragment>
     )
  }
  
 class Portfolio extends React.Component {
 
    render() {
-    return <h1>id: {this.props.id}</h1>
+      let component = <Hotel />
+      switch (this.props.id){
+         case "Hotel":
+            component = <Hotel />  
+         break;
+         case "Residential":
+            component = <Residential />  
+         break;
+         case "Restaurant":
+            component = <Restaurant />  
+         break;
+      }
+
+      return component;
    }
 }
 

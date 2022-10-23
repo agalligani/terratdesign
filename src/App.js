@@ -18,22 +18,27 @@ const App = () => {
     return  (
         <Router>
         <DesignNav />
+        <Container>
             <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/contact" element={<Contact/>} />
                 <Route path="/portfolio" element={<Home/>} />
                 <Route path="/portfolio/:id" element={<Picker />} />
             </Routes>
+        </Container>
         </Router>
     )
 }
 
 function Picker() {
     let { id } = useParams();
+    let Id = id.toLowerCase()
+    .split(' ')
+    .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+    .join(' ');
+
     return (
-        <Container>
-            <Portfolio id={id} />
-        </Container>
+            <Portfolio id={Id} />
     )
 }
 
