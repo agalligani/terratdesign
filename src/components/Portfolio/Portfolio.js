@@ -1,36 +1,6 @@
 import React from "react";
-import "./Portfolio.scss";
-import {useParams} from "react-router-dom";
-
-const Hotel = () => {
-   return (
-   <React.Fragment>
-      <h1>Hotel</h1>
-      <ul className="mondrianGrid">
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-      </ul>
-    </React.Fragment>
-   )
-}
+import Hotel from "./Hotel";
+import {Container} from "react-bootstrap";
 
 const Restaurant = () => {
     return (
@@ -98,7 +68,7 @@ class Portfolio extends React.Component {
       let component = <Hotel />
       switch (this.props.id){
          case "Hotel":
-            component = <Hotel />  
+            component = <Hotel />
          break;
          case "Residential":
             component = <Residential />  
@@ -107,8 +77,8 @@ class Portfolio extends React.Component {
             component = <Restaurant />  
          break;
       }
-
-      return component;
+      
+      return <Container>{component}</Container>;
    }
 }
 

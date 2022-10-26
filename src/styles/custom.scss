@@ -1,8 +1,9 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Montserrat:regular,bold,100,200,300,400,500');
-
+@import "../components/Portfolio/Portfolio.scss";
 * {
     font-family: Montserrat;
+    background-color: #f5f6f6;
 }
 
 .menu {
@@ -23,6 +24,10 @@
         font-size: 1.3rem;
         font-weight: 300;
         letter-spacing: 8pt;
+    }
+
+    img {
+        width: 300px;
     }
 
 }
