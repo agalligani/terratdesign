@@ -5,7 +5,6 @@
         grid-template-rows: repeat(22, 7%);
         grid-gap: .5rem;
     }
-
 }
 
 @include media-breakpoint-down(md) {
@@ -13,9 +12,7 @@
         grid-template-rows: repeat(22, 6%);
         grid-gap: .2rem;
     }
-
 }
-
 
 div.grid-gallery {
     margin-top: 120px;
@@ -33,6 +30,10 @@ div.grid-gallery {
         height: 100%;
         overflow: hidden;        
     }
+
+}
+
+div.hotel {
 
     .gallery__item--1 {
         grid-column-start: 1;

@@ -5,7 +5,7 @@ import SmallLogo from "../Logos/SmallLogo";
 
 function DesignNav() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" class="bg-white">
       <Container>
         <Navbar.Brand href="/"><SmallLogo /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
