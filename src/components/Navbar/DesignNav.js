@@ -5,7 +5,7 @@ import SmallLogo from "../Logos/SmallLogo";
 
 function DesignNav() {
   return (
-    <Navbar bg="light" expand="lg" class="bg-white">
+    <Navbar bg="light" expand="lg" className="bg-white">
       <Container>
         <Navbar.Brand href="/"><SmallLogo /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -26,6 +26,9 @@ function DesignNav() {
               </LinkContainer>
               <LinkContainer to="/portfolio/residential">
                 <NavDropdown.Item>Residential</NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to="/portfolio/carousel">
+                <NavDropdown.Item>Carousel</NavDropdown.Item>
               </LinkContainer>
               {/* <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">

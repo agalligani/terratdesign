@@ -3,6 +3,7 @@ import Hotel from "./Hotel";
 import Restaurant from "./Restaurant";
 import Residence from "./Residence";
 import {Container} from "react-bootstrap";
+import Carousel from 'react-bootstrap/Carousel';
 
 const Residential = () => {
     return (
@@ -15,14 +16,25 @@ class Portfolio extends React.Component {
    render() {
       let component = <Hotel />
       switch (this.props.id){
-         case "Hotel":
-            component = <Hotel />
+         case "Carousel":
+//            component = <Hotel />
+            component = <Carousel>
+               <Carousel.Item>
+                  <Hotel />
+               </Carousel.Item>
+               <Carousel.Item>
+                  <Hotel />
+               </Carousel.Item>
+               <Carousel.Item>
+                  <Hotel />
+               </Carousel.Item>
+            </Carousel>         
          break;
          case "Residential":
             component = <Residence />  
          break;
          case "Restaurant":
-            component = <Restaurant />  
+            component = <Restaurant />
          break;
       }
       
