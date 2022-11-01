@@ -2,33 +2,28 @@
 @include media-breakpoint-up(md) {
 
     div.grid-gallery {
-        grid-template-rows: repeat(22, 7%);
+        grid-template-rows: repeat(11, 7%);
         grid-gap: .5rem;
     }
 }
 
 @include media-breakpoint-down(md) {
     div.grid-gallery {
-        grid-template-rows: repeat(22, 6%);
+        grid-template-rows: repeat(11, 6%);
         grid-gap: .2rem;
     }
 }
 
-
-a.carousel-control-prev {
+a.carousel-control-prev,  a.carousel-control-next {
     width: 5%;
-    // justify-content: flex-start!important;
-}
-
-a.carousel-control-next {
-    width: 5%;
-    // justify-content: flex-end!important;
 }
 
 div.grid-gallery {
-    margin-top: 120px;
-    padding-left: 70px;
-    padding-right: 70pt;
+    margin-top: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
     background-color: #ffffff;
     display: grid;
     grid-template-columns: repeat(27, 1fr);
@@ -45,164 +40,3 @@ div.grid-gallery {
     }
 
 }
-
-div.hotel {
-
-    .gallery__item--1 {
-        grid-column-start: 1;
-        grid-column-end: 9;
-        grid-row-start: 1;
-        grid-row-end: 6;
-    }
-
-    .gallery__item--2 {
-        grid-column-start: 9;
-        grid-column-end: 13;
-        grid-row-start: 1;
-        grid-row-end: 4;
-    }
-
-    .gallery__item--3 {
-        grid-column-start: 9;
-        grid-column-end: 13;
-        grid-row-start: 4;
-        grid-row-end: 6;
-    }
-
-    .gallery__item--4 {
-        grid-column-start: 13;
-        grid-column-end: 21;
-        grid-row-start: 1;
-        grid-row-end: 6;
-    }    
-    .caption {
-        grid-column-start: 21;
-        grid-column-end: 26;
-        grid-row-start: 1;
-        grid-row-end: 1;
-    }
-
-    .gallery__item--5 {
-        grid-column-start: 21;
-        grid-column-end: 26;
-        grid-row-start: 2;
-        grid-row-end: 6;
-    }
-    .gallery__item--6 {
-        grid-column-start: 1;
-        grid-column-end: 7;
-        grid-row-start: 6;
-        grid-row-end: 12;
-    }
-    .gallery__item--7 {
-        grid-column-start: 7;
-        grid-column-end: 13;
-        grid-row-start: 6;
-        grid-row-end: 12;
-    }
-    .gallery__item--8 {
-        grid-column-start: 13;
-        grid-column-end: 19;
-        grid-row-start: 6;
-        grid-row-end: 12;
-    }
-    .gallery__item--9 {
-        grid-column-start: 19;
-        grid-column-end: 26;
-        grid-row-start: 6;
-        grid-row-end: 12;
-    }
-}
-
-
-ul.mondrianGrid
-    {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-        grid-auto-rows: 80px;
-        grid-auto-flow: dense;
-
-        li {
-            list-style: none;
-            border: solid 3px #dddddd;
-        }
-
-        li:nth-child(1) { 
-            grid-row: span 2;
-            background-color: red;
-        }
-
-        li:nth-child(2) { 
-            background-color: black;
-        }
-
-        li:nth-child(3) { 
-            grid-column: span 2;
-            background-color: blue;
-        }
-
-        li:nth-child(4) { 
-            background-color: yellow;
-        }
-
-        li:nth-child(5) { 
-            grid-row: span 2;
-            grid-column: span 2;
-            background-color: blue;
-        }
-
-        li:nth-child(6) { 
-            grid-row: span 3;
-            grid-column: span 2;
-            background-color: black;
-        }
-
-        li:nth-child(7) { 
-            grid-row: span 2;
-            grid-column: span 2;
-            background-color: yellow;
-        }
-
-        li:nth-child(8) { 
-            grid-column: span 2;
-            background-color: red;
-        }
-
-        li:nth-child(9) { 
-            grid-row: span 2;
-            background-color: yellow;
-        }
-        li:nth-child(10) { 
-            grid-row: span 2;
-            grid-column: span 2;
-            background-color: black;
-        }
-        li:nth-child(11) { 
-            grid-row: span 1;
-            grid-column: span 2;
-            background-color: white;
-        }
-        li:nth-child(12) { 
-            background-color: blue;
-        }
-        li:nth-child(13) { 
-            grid-row: span 2;
-            background-color: yellow;
-        }
-
-        li:nth-child(14) { 
-            grid-column: span 2;
-            background-color: red;
-        }
-
-        li:nth-child(15) { 
-            grid-column: span 2;
-            background-color: yellow;
-        }
-
-        li:nth-child(16) { 
-            grid-column: span 2;
-            background-color: blue;
-        }
-
-    }

@@ -20,7 +20,7 @@ class Portfolio extends React.Component {
 //            component = <Hotel />
             component = <Carousel>
                <Carousel.Item>
-                  <Hotel />
+                  <Residence />
                </Carousel.Item>
                <Carousel.Item>
                   <Hotel />

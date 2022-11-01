@@ -15,9 +15,6 @@ const Hotel = () => {
       <figure className="gallery__item gallery__item--4">
          <img src="images/hotel/hotel_007.jpg" className="gallery__img" alt="Terrat Design - Hotel Interior" />
       </figure>
-      <figure className="gallery__item caption">
-         <h4>Hotel</h4>
-      </figure>
       <figure className="gallery__item gallery__item--5">
          <img src="images/hotel/hotel_002.jpg" className="gallery__img" alt="Terrat Design - Hotel Interior" />
       </figure>
