@@ -1,11 +1,14 @@
 import React from "react";
+import PhotoModal from "../Modals/PhotoModal";
 
 const Hotel = () => {
    return (
+   <React.Fragment>
    <div className="grid-gallery hotel">
-      <figure className="gallery__item gallery__item--1">
+      <PhotoModal></PhotoModal>
+      {/* <figure className="gallery__item gallery__item--1">
          <img src="images/hotel/hotel_006.jpg" className="gallery__img" alt="Terrat Design - Hotel Interior" />
-      </figure>
+      </figure> */}
       <figure className="gallery__item gallery__item--2">
          <img src="images/hotel/hotel_005.jpg" className="gallery__img" alt="Terrat Design - Hotel Interior" />
       </figure>
@@ -31,6 +34,7 @@ const Hotel = () => {
          <img src="images/hotel/hotel_001.jpg" className="gallery__img" alt="Terrat Design - Hotel Interior" />
       </figure>
    </div>
+   </React.Fragment>
    )
 }
 

@@ -18,17 +18,23 @@ function DesignNav() {
             <Nav.Link>Contact</Nav.Link>
           </LinkContainer>
             <NavDropdown title="Portfolio" id="basic-nav-dropdown">
+              <LinkContainer to="/portfolio/carousel">
+                <NavDropdown.Item>Carousel</NavDropdown.Item>
+              </LinkContainer>
               <LinkContainer to="/portfolio/hotel">
                 <NavDropdown.Item>Hotel</NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to="/portfolio/hotel2">
+                <NavDropdown.Item>Hotel2</NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to="/portfolio/hotel3">
+                <NavDropdown.Item>Hotel3</NavDropdown.Item>
               </LinkContainer>
               <LinkContainer to="/portfolio/restaurant">
                 <NavDropdown.Item>Restaurant</NavDropdown.Item>
               </LinkContainer>
               <LinkContainer to="/portfolio/residential">
                 <NavDropdown.Item>Residential</NavDropdown.Item>
-              </LinkContainer>
-              <LinkContainer to="/portfolio/carousel">
-                <NavDropdown.Item>Carousel</NavDropdown.Item>
               </LinkContainer>
               <LinkContainer to="/portfolio/restaurant2">
                 <NavDropdown.Item>Restaurant2</NavDropdown.Item>

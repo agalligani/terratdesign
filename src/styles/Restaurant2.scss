@@ -5,21 +5,21 @@ div.restaurant2 {
         grid-column-start: 1;
         grid-column-end: 10;
         grid-row-start: 1;
-        grid-row-end: 6;
+        grid-row-end: 12;
     }
 
     .gallery__item--2 {
         grid-column-start: 10;
         grid-column-end: 15;
         grid-row-start: 1;
-        grid-row-end: 4;
+        grid-row-end: 6;
     }
 
     .gallery__item--3 {
         grid-column-start: 10;
-        grid-column-end: 15;
-        grid-row-start: 4;
-        grid-row-end: 6;
+        grid-column-end: 18;
+        grid-row-start: 6;
+        grid-row-end: 12;
     }
 
     .gallery__item--4 {
@@ -35,14 +35,14 @@ div.restaurant2 {
         grid-row-end: 6;
     }
     .gallery__item--6 {
-        grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-start: 18;
+        grid-column-end: 23;
         grid-row-start: 6;
         grid-row-end: 12;
     }
     .gallery__item--7 {
-        grid-column-start: 7;
-        grid-column-end: 14;
+        grid-column-start: 23;
+        grid-column-end: 28;
         grid-row-start: 6;
         grid-row-end: 12;
     }
