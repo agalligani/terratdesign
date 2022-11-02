@@ -2,14 +2,14 @@
 @include media-breakpoint-up(md) {
 
     div.grid-gallery {
-        grid-template-rows: repeat(11, 7%);
+        grid-template-rows: repeat(11, 3rem);
         grid-gap: .5rem;
     }
 }
 
 @include media-breakpoint-down(md) {
     div.grid-gallery {
-        grid-template-rows: repeat(11, 6%);
+        grid-template-rows: repeat(11, 2.4rem);
         grid-gap: .2rem;
     }
 }

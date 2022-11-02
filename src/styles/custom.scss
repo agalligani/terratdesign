@@ -4,6 +4,7 @@
 @import "./Home.scss";
 @import "./Hotel.scss";
 @import "./Restaurant.scss";
+@import "./Restaurant2.scss";
 @import "./Residence.scss";
 
 * {
@@ -95,14 +96,4 @@ ul.small-logo li:nth-child(4) {
     color: #cc5500;
 }
 
-
-a.carousel-control-prev {
-    width: 5%;
-    // justify-content: flex-start!important;
-}
-
-a.carousel-control-next {
-    width: 5%;
-    // justify-content: flex-end!important;
-}
 
