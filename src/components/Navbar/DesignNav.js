@@ -33,6 +33,9 @@ function DesignNav() {
               <LinkContainer to="/portfolio/restaurant">
                 <NavDropdown.Item>Restaurant</NavDropdown.Item>
               </LinkContainer>
+              <LinkContainer to="/portfolio/restaurant2">
+                <NavDropdown.Item>Restaurant2</NavDropdown.Item>
+              </LinkContainer>
               <LinkContainer to="/portfolio/residential">
                 <NavDropdown.Item>Residential</NavDropdown.Item>
               </LinkContainer>
@@ -42,11 +45,11 @@ function DesignNav() {
               <LinkContainer to="/portfolio/residential3">
                 <NavDropdown.Item>Residential3</NavDropdown.Item>
               </LinkContainer>
-              <LinkContainer to="/portfolio/restaurant4">
-                <NavDropdown.Item>Restaurant4</NavDropdown.Item>
+              <LinkContainer to="/portfolio/residential4">
+                <NavDropdown.Item>Residential4</NavDropdown.Item>
               </LinkContainer>
-              <LinkContainer to="/portfolio/restaurant5">
-                <NavDropdown.Item>Restaurant5</NavDropdown.Item>
+              <LinkContainer to="/portfolio/residential5">
+                <NavDropdown.Item>Residential5</NavDropdown.Item>
               </LinkContainer>
               {/* <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
