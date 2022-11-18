@@ -5,7 +5,10 @@ import Hotel3 from "./Hotel3";
 import Restaurant from "./Restaurant";
 import Restaurant2 from "./Restaurant2";
 import Residence from "./Residence";
-import {Container} from "react-bootstrap";
+import Residence2 from "./Residence2";
+import Residence3 from "./Residence3";
+import Residence4 from "./Residence4";
+import Residence5 from "./Residence5";
 import Carousel from 'react-bootstrap/Carousel';
 
 import PhotoModal from "../Modals/PhotoModal";
@@ -42,10 +45,13 @@ class Portfolio extends React.Component {
                <Carousel.Item>
                   <Residence />
                </Carousel.Item>
+               <Carousel.Item>
+                  <Residence2 />
+               </Carousel.Item>
             </Carousel>         
          break;
          case "Hotel":
-            component = <Hotel />  
+            component = <Hotel />
          break;
          case "Hotel2":
             component = <Hotel2 />  
@@ -55,6 +61,18 @@ class Portfolio extends React.Component {
          break;
          case "Residential":
             component = <Residence />  
+         break;
+         case "Residential2":
+            component = <Residence2 />  
+         break;
+         case "Residential3":
+            component = <Residence3 />  
+         break;
+         case "Residential4":
+            component = <Residence4 />  
+         break;
+         case "Residential5":
+            component = <Residence5 />  
          break;
          case "Restaurant":
             component = <Restaurant />

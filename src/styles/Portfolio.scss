@@ -1,14 +1,15 @@
+
 @include media-breakpoint-up(md) {
 
     div.grid-gallery {
-        grid-template-rows: repeat(11, 3rem);
+        grid-template-rows: repeat(11, 2.6rem);
         grid-gap: .5rem;
     }
 }
 
 @include media-breakpoint-down(md) {
     div.grid-gallery {
-        grid-template-rows: repeat(11, 2.4rem);
+        grid-template-rows: repeat(11, 1.2rem);
         grid-gap: .2rem;
     }
 }
@@ -23,7 +24,7 @@ div.grid-gallery {
     padding-bottom: 5%;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: #ffffff;
+    background-color: #f6f5f5;
     display: grid;
     grid-template-columns: repeat(27, 1fr);
 
