@@ -8,9 +8,17 @@
 @import "./Restaurant.scss";
 @import "./Restaurant2.scss";
 @import "./Residence.scss";
+@import "./Residence2.scss";
+@import "./Residence3.scss";
+@import "./Residence4.scss";
+@import "./Residence5.scss";
+@import "./modals.scss";
 
 * {
     font-family: Montserrat;
+}
+
+body, #root {
     background-color: #f5f6f6;
 }
 

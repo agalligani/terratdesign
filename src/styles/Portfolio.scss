@@ -19,14 +19,15 @@ a.carousel-control-prev,  a.carousel-control-next {
 }
 
 div.grid-gallery {
-    margin-top: 3%;
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: #f6f5f5;
+    background-color: #fff;
     display: grid;
     grid-template-columns: repeat(27, 1fr);
+    border-top: solid 12px #f6f6f6;
+    border-bottom: solid 12px #f6f6f6;
 
     .gallery__img {
         width: 100%; 

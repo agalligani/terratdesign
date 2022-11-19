@@ -13,14 +13,16 @@ class PhotoModal extends React.Component {
     render() {
       return (
         <React.Fragment>
-            <figure className="gallery__item gallery__item--1" onClick={this.openModal}>
-                <img src="images/hotel/hotel_006.jpg" className="gallery__img" alt="Terrat Design - Hotel Interior" />
+            <figure className={this.props.className} onClick={this.openModal}>
+                <img src={this.props.children.props.src} className="gallery__img" alt={this.props.children.props.alt} />
             </figure>
-        <Modal show={this.state.isOpen} onHide={this.closeModal}>
+        <Modal className="modal fade modal-lg" show={this.state.isOpen} onHide={this.closeModal}>
           <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
+            <Modal.Title>{this.props.children.props.alt}</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+          <Modal.Body>
+                <img src={this.props.children.props.src} onClick={this.closeModal} className="modal__img" alt={this.props.children.props.alt} />
+          </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={(this.closeModal)}>
                 Close

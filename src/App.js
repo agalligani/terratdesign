@@ -1,6 +1,7 @@
 import React from "react";
 import DesignNav from "./components/Navbar/DesignNav"
 import Home from "./components/Home/Home";
+import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Portfolio from "./components/Portfolio/Portfolio";
 import './styles/custom.scss';
@@ -21,6 +22,7 @@ const App = () => {
         <Container>
             <Routes>
                 <Route path="/" element={<Home/>} />
+                <Route path="/about" element={<About/>} />
                 <Route path="/contact" element={<Contact/>} />
                 <Route path="/portfolio" element={<Home/>} />
                 <Route path="/portfolio/:id" element={<Picker />} />
