@@ -11,8 +11,14 @@ function DesignNav() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-          <LinkContainer to="/">
-            <Nav.Link>Home</Nav.Link>
+          <LinkContainer to="/portfolio/hotel">
+              <Nav.Link>Hotel</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to="/portfolio/restaurant">
+              <Nav.Link>Restaurant</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to="/portfolio/residential">
+              <Nav.Link>Residential</Nav.Link>
           </LinkContainer>
           <LinkContainer to="/about">
             <Nav.Link>About</Nav.Link>
@@ -21,9 +27,6 @@ function DesignNav() {
             <Nav.Link>Contact</Nav.Link>
           </LinkContainer> */}
             <NavDropdown title="Portfolio" id="basic-nav-dropdown">
-              <LinkContainer to="/portfolio/hotel">
-                <NavDropdown.Item>Hotel</NavDropdown.Item>
-              </LinkContainer>
               <LinkContainer to="/portfolio/hotel1">
                 <NavDropdown.Item>Hotel1</NavDropdown.Item>
               </LinkContainer>
@@ -32,9 +35,6 @@ function DesignNav() {
               </LinkContainer>
               <LinkContainer to="/portfolio/hotel3">
                 <NavDropdown.Item>Hotel3</NavDropdown.Item>
-              </LinkContainer>
-              <LinkContainer to="/portfolio/restaurant">
-                <NavDropdown.Item>Restaurant</NavDropdown.Item>
               </LinkContainer>
               <LinkContainer to="/portfolio/restaurant2">
                 <NavDropdown.Item>Restaurant2</NavDropdown.Item>
@@ -54,10 +54,6 @@ function DesignNav() {
               <LinkContainer to="/portfolio/residential5">
                 <NavDropdown.Item>Residential5</NavDropdown.Item>
               </LinkContainer>
-              {/* <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item> */}
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
