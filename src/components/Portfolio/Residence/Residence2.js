@@ -1,5 +1,5 @@
 import React from "react";
-import PhotoModal from "../Modals/PhotoModal";
+import PhotoModal from "../../Modals/PhotoModal";
 
 const Residence2 = () => {
     return (

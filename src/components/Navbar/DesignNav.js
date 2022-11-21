@@ -17,15 +17,15 @@ function DesignNav() {
           <LinkContainer to="/about">
             <Nav.Link>About</Nav.Link>
           </LinkContainer>
-          <LinkContainer to="/contact">
+          {/* <LinkContainer to="/contact">
             <Nav.Link>Contact</Nav.Link>
-          </LinkContainer>
+          </LinkContainer> */}
             <NavDropdown title="Portfolio" id="basic-nav-dropdown">
-              <LinkContainer to="/portfolio/carousel">
-                <NavDropdown.Item>Carousel</NavDropdown.Item>
-              </LinkContainer>
               <LinkContainer to="/portfolio/hotel">
                 <NavDropdown.Item>Hotel</NavDropdown.Item>
+              </LinkContainer>
+              <LinkContainer to="/portfolio/hotel1">
+                <NavDropdown.Item>Hotel1</NavDropdown.Item>
               </LinkContainer>
               <LinkContainer to="/portfolio/hotel2">
                 <NavDropdown.Item>Hotel2</NavDropdown.Item>

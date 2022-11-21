@@ -1,23 +1,19 @@
 import React from "react";
-import Hotel from "./Hotel";
-import Hotel2 from "./Hotel2";
-import Hotel3 from "./Hotel3";
-import Restaurant from "./Restaurant";
-import Restaurant2 from "./Restaurant2";
-import Residence from "./Residence";
-import Residence2 from "./Residence2";
-import Residence3 from "./Residence3";
-import Residence4 from "./Residence4";
-import Residence5 from "./Residence5";
+import Hotel from "./Hotel/Hotel";
+import Hotel1 from "./Hotel/Hotel1";
+import Hotel2 from "./Hotel/Hotel2";
+import Hotel3 from "./Hotel/Hotel3";
+import Restaurant from "./Restaurant/Restaurant";
+import Restaurant2 from "./Restaurant/Restaurant2";
+import Residence from "./Residence/Residence";
+import Residence1 from "./Residence/Residence1";
+import Residence2 from "./Residence/Residence2";
+import Residence3 from "./Residence/Residence3";
+import Residence4 from "./Residence/Residence4";
+import Residence5 from "./Residence/Residence5";
 import Carousel from 'react-bootstrap/Carousel';
 
 import PhotoModal from "../Modals/PhotoModal";
-
-const Residential = () => {
-    return (
-      <Residence />
-    )
- }
  
 class Portfolio extends React.Component {
 

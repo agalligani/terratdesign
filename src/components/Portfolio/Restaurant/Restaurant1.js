@@ -1,8 +1,8 @@
 import React from "react";
-import PhotoModal from "../Modals/PhotoModal";
+import PhotoModal from "../../Modals/PhotoModal";
 
 
-const Restaurant = () => {
+const Restaurant1 = () => {
    return (
    <div className="grid-gallery restaurant">
       <PhotoModal className="gallery__item gallery__item--1">
@@ -30,4 +30,4 @@ const Restaurant = () => {
    )
 }
 
-export default Restaurant;
+export default Restaurant1;

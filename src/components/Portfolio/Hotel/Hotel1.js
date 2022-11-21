@@ -1,7 +1,7 @@
 import React from "react";
-import PhotoModal from "../Modals/PhotoModal";
+import PhotoModal from "../../Modals/PhotoModal";
 
-const Hotel = () => {
+const Hotel1 = () => {
    return (
    <React.Fragment>
    <div className="grid-gallery hotel">
@@ -40,4 +40,4 @@ const Hotel = () => {
    )
 }
 
-export default Hotel;
+export default Hotel1;
