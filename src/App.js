@@ -13,11 +13,17 @@ import {
     useRouteMatch
   } from "react-router-dom";
 import { Container } from "react-bootstrap";
+import { Helmet } from "react-helmet";
 
 const App = () => {
 
     return  (
         <Router>
+            <Helmet>
+                <title>Terrat Design | Boutique Interior Design</title>
+                <meta name="description" content="Terrat Design - Providing Hotel, Restaurant & Residential designs for exclusive clients." />
+                <meta name="keywords" content="Andrew Terrat, Interior Design, Modern design, Hotel Interiors,  Restaurant Interiors, Residential Interiors, Boston, Cape Cod, Provincetown, Marthas Vineyard, Nantucket" />
+            </Helmet>
         <DesignNav />
         <Container>
             <Routes>

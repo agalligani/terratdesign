@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Carousel from 'react-bootstrap/Carousel';
 import Residence1 from "./Residence1";
 import Residence2 from "./Residence2";
@@ -9,6 +10,11 @@ import Residence5 from "./Residence5";
 const Residence = () => {
     return (  
        <React.Fragment>
+         <Helmet>
+            <title>Terrat Design | Residential Design</title>
+            <meta name="description" content="Terrat Design - Residential Interior Design" />
+            <meta name="keywords" content="Andrew Terrat, Residential Design, Interiors" />
+         </Helmet>        
           <Carousel>
              <Carousel.Item>
                 <Residence1 />
