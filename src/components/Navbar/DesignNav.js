@@ -12,13 +12,13 @@ function DesignNav() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
           <LinkContainer to="/portfolio/hotel">
-              <Nav.Link>Hotel</Nav.Link>
+              <Nav.Link><span className="redred">HOT</span>EL</Nav.Link>
           </LinkContainer>
           <LinkContainer to="/portfolio/restaurant">
-              <Nav.Link>Restaurant</Nav.Link>
+              <Nav.Link><span className="redred">REST</span>AURANT</Nav.Link>
           </LinkContainer>
           <LinkContainer to="/portfolio/residential">
-              <Nav.Link>Residential</Nav.Link>
+              <Nav.Link><span className="redred">RESI</span>DENTIAL</Nav.Link>
           </LinkContainer>
           <LinkContainer to="/about">
             <Nav.Link>About</Nav.Link>

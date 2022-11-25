@@ -3,6 +3,7 @@
 @import "./Portfolio.scss";
 @import "./Home.scss";
 @import "./modals.scss";
+@import "./nav.scss";
 
 * {
     font-family: Montserrat;
@@ -94,6 +95,10 @@ ul.small-logo li:nth-child(4) {
 
 .terred {
     color: #cc5500;
+}
+
+.redred {
+    color: #ff0000;
 }
 
 
