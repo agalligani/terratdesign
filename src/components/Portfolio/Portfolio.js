@@ -24,7 +24,7 @@ class Portfolio extends React.Component {
 //            component = <Hotel />
             component = <Carousel>
                <Carousel.Item>
-                  <Hotel />
+                  <Hotel1 />
                </Carousel.Item>
                <Carousel.Item>
                   <Hotel2 />
@@ -33,13 +33,13 @@ class Portfolio extends React.Component {
                   <Hotel3 />
                </Carousel.Item>
                <Carousel.Item>
-                  <Restaurant />
+                  <Restaurant1 />
                </Carousel.Item>
                <Carousel.Item>
                   <Restaurant2 />
                </Carousel.Item>
                <Carousel.Item>
-                  <Residence />
+                  <Residence1 />
                </Carousel.Item>
                <Carousel.Item>
                   <Residence2 />
