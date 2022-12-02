@@ -3,6 +3,7 @@ import DesignNav from "./components/Navbar/DesignNav"
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 import Portfolio from "./components/Portfolio/Portfolio";
 import './styles/custom.scss';
 import {
@@ -34,6 +35,8 @@ const App = () => {
                 <Route path="/portfolio/:id" element={<Picker />} />
             </Routes>
         </Container>
+        <Footer />
+        
         </Router>
     )
 }
