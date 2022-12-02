@@ -8,81 +8,26 @@
     border-top: solid 12px #f6f6f6;
     border-bottom: solid 12px #f6f6f6;
 
-    h1.page-title {
-        margin-bottom: 20pt;
-        span {
-            display: inline-block;
-            padding: 10px;
-            border: solid 2px #000000;
-        }
+    header {
+        margin-right: 5em;
     }
 
     article {
-        display: relative;
+        display: flex;
         .about-page-article {
             display: inline-block;
-            font-size: 12pt;
-            line-height: 30px;
+            line-height: 32px;
+            width: 100%;
+            padding-bottom: 1em;
         }
 
         ul.about-page-images {
-            float: right;
             list-style: none;
-            li {
-                align-items: center;
-                text-align: center;
-                line-height: 2px;
-                margin-bottom: 16px;;
-                h5 {
-                    margin: 0;
-                    padding: 0;
-                }
-            }
-        }
-    }    
-}
-
-.image-cropper {
-    width: 220px;
-    height: 220px;
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-    border-radius: 50%;
-    border: solid 12px #fdfdfd;
-  
-    img {
-        display: block;
-        padding: 20 -200 -20 200;
-        width: 100%;
-        }
-    }
-
-@include media-breakpoint-up(md) {
-
-    .about-page {
-        display: flex;
-        flex-direction: row;
-        header {
-            display: flex;
-            margin-right: 5em;
-        }
-
-        article {
-            display: flex;
-            .about-page-article {
-                display: inline-block;
-                font-size: 12pt;
-                line-height: 30px;
-                width: 90%;
-            }
-
-            ul.about-page-images {
-                display: inline-block;
-                width: 100%;     
-                list-style: none;
-                display: relative;
+            padding: 1em;
+            // margin: 0;
+            align-items: center;
                 li {
+                    padding-bottom: 1.5em;
                     align-items: center;
                     text-align: center;
                     line-height: 2px;
@@ -93,12 +38,20 @@
                     }
                 }
             }
+    }
+
+    h1.page-title {
+        width: 60%;
+        span {
+            display: inline-block;
+            padding: 10px;
+            border: solid 2px #000000;
         }
 
 
     .image-cropper {
-        width: 220px;
-        height: 220px;
+        width: 280px;
+        height: 280px;
         position: relative;
         overflow: hidden;
         margin: 0 auto;
@@ -113,7 +66,10 @@
         }    
     }
 }
+
+@include media-breakpoint-up(lg) {
     
+}
 
 @include media-breakpoint-down(lg) {
      
@@ -121,10 +77,4 @@
 
 @include media-breakpoint-down(md) {
 
-}
-
-.call-out {
-    display: inline;
-    font-size: 15pt;
-    font-weight: 700;
 }
