@@ -26,7 +26,7 @@ const App = () => {
                 <meta name="keywords" content="Andrew Terrat, Interior Design, Modern design, Hotel Interiors,  Restaurant Interiors, Residential Interiors, Boston, Cape Cod, Provincetown, Marthas Vineyard, Nantucket" />
             </Helmet>
         <DesignNav />
-        <Container>
+        <section className="main">
             <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/about" element={<About/>} />
@@ -34,7 +34,7 @@ const App = () => {
                 <Route path="/portfolio" element={<Home/>} />
                 <Route path="/portfolio/:id" element={<Picker />} />
             </Routes>
-        </Container>
+        </section>
         <Footer />
         
         </Router>
