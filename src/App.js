@@ -13,7 +13,6 @@ import {
     useParams,
     useRouteMatch
   } from "react-router-dom";
-import { Container } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 
 const App = () => {
