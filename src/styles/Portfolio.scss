@@ -13,7 +13,7 @@
 @include media-breakpoint-up(md) {
 
     div.grid-gallery {
-        grid-template-rows: repeat(11, 2.6rem);
+        grid-template-rows: repeat(11, 3rem);
         grid-gap: .5rem;
     }
 }
@@ -39,6 +39,8 @@ div.grid-gallery {
     grid-template-columns: repeat(27, 1fr);
     border-top: solid 12px #f6f6f6;
     border-bottom: solid 12px #f6f6f6;
+    max-width: 1240px;
+    margin: auto;
 
     .gallery__img {
         width: 100%; 
